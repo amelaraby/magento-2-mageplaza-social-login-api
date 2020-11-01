@@ -1,0 +1,45 @@
+{
+    "name": "ahmed-elaraby/magento-2-mageplaza-social-login-api",
+    "description": "An extension for Magento 2 Mageplaza Social Login extension which expose an APIs to login via social media access tokens",
+    "require": {
+        "mageplaza/magento-2-social-login": "^4.0.0",
+        "magento/magento-composer-installer": "*"
+    },
+    "authors": [{
+        "name": "Ahmed Elaraby",
+        "email": "araby2305@gmail.com",
+        "role": "Technical Lead"
+    }],
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "proprietary",
+    "keywords": [
+        "magento 2",
+        "social login",
+        "magento 2 social login",
+        "magento 2 social login api",
+        "facebook login",
+        "Google Login",
+        "Instagram Login",
+        "LinkedIn Login",
+        "Microsoft Live Login",
+        "Twitter Login",
+        "Yahoo Login",
+        "FourSquare Login",
+        "Amazon Login",
+        "Login",
+        "social api",
+        "google",
+        "facebook",
+        "twitter",
+        "social proof"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Logixie\\MageplazaSocialLoginApi\\": ""
+        }
+    }
+}
