@@ -101,7 +101,12 @@ class SocialCustomerTokenService implements SocialCustomerTokenServiceInterface
 
         \Hybrid_Auth::initialize($authParams);
 
+        \Hybrid_Auth::storage()->set("hauth_session.$type.token.access_token", $token);
+        \Hybrid_Auth::storage()->set("hauth_session.$type.token.access_token_secret", $tokenSecret);
+        \Hybrid_Auth::storage()->set("hauth_session.$type.token.refresh_token", $refreshToken);
+
         $socialAdapterProvider = \Hybrid_Auth::setup($type, $authParams);
+
         $socialAdapterProvider->adapter->token('access_token', $token);
         $socialAdapterProvider->adapter->token('access_token_secret', $tokenSecret);
         $socialAdapterProvider->adapter->token('refresh_token', $refreshToken);
