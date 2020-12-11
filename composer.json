@@ -1,5 +1,5 @@
 {
-    "name": "ahmed-elaraby/magento-2-mageplaza-social-login-api",
+    "name": "amelaraby/magento-2-mageplaza-social-login-api",
     "description": "An extension for Magento 2 Mageplaza Social Login extension which expose an APIs to login via social media access tokens",
     "require": {
         "mageplaza/magento-2-social-login": "^4.0.0",
@@ -11,7 +11,7 @@
         "role": "Technical Lead"
     }],
     "type": "magento2-module",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "proprietary",
     "keywords": [
         "magento 2",
